@@ -2,14 +2,21 @@
   "name": "react-tweeker-js",
   "version": "1.0.0",
   "description": "A react wrapper for the tweeker embed script",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tweeker-io/react-tweeker-js.git"
+  },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Tweeker (https://tweeker.io)",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
@@ -21,6 +28,6 @@
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "tweeker-js": "^1.0.0"
+    "tweeker-js": "^1.1.2"
   }
 }
