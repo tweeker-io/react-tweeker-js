@@ -1,7 +1,7 @@
 {
   "name": "react-tweeker-js",
   "version": "1.0.0",
-  "description": "",
+  "description": "A react wrapper for the tweeker embed script",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "tweeker-js": "^1.0.0"
   }
 }
