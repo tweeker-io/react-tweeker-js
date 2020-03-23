@@ -1,5 +1,3 @@
-import TweekerEmbed from './components/embed'
+import Tweeker from './components/tweeker'
 
-export {
-  TweekerEmbed
-}
+export default Tweeker

@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import PropTypes from 'prop-types'
 import { embedTweeker } from "tweeker-js"
 
-class Embed extends Component {
+class Tweeker extends Component {
   componentDidMount () {
     const { businessId, embedVersion } = this.props
 
@@ -24,4 +24,4 @@ Embed.propTypes = {
   embedVersion: PropTypes.string.isRequired,
 }
 
-export default Embed
+export default Tweeker
