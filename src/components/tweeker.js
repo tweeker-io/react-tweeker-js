@@ -14,12 +14,12 @@ class Tweeker extends Component {
   }
 }
 
-Embed.defaultProps = {
+Tweeker.defaultProps = {
   businessId: null,
   embedVersion: 'latest',
 }
 
-Embed.propTypes = {
+Tweeker.propTypes = {
   businessId: PropTypes.string.isRequired,
   embedVersion: PropTypes.string.isRequired,
 }
