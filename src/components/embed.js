@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import PropTypes from 'prop-types'
 import { embedTweeker } from "tweeker-js"
 
 class Embed extends Component {
