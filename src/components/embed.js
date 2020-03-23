@@ -5,7 +5,7 @@ class Embed extends Component {
   componentDidMount () {
     const { businessId, embedVersion } = this.props
 
-    embedTweeker(businessId, embedVersion)
+    embedTweeker({ businessId, embedVersion })
   }
 
   render() {
