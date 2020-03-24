@@ -2,9 +2,11 @@ import { Component } from "react"
 import PropTypes from 'prop-types'
 import { embedTweeker } from "tweeker-js"
 
-class Tweeker extends Component {
+class TweekerEmbed extends Component {
   componentDidMount () {
     const { businessId, embedVersion } = this.props
+
+    console.log(embedTweeker)
 
     embedTweeker({ businessId, embedVersion })
   }
@@ -14,14 +16,14 @@ class Tweeker extends Component {
   }
 }
 
-Tweeker.defaultProps = {
+TweekerEmbed.defaultProps = {
   businessId: null,
   embedVersion: 'latest',
 }
 
-Tweeker.propTypes = {
+TweekerEmbed.propTypes = {
   businessId: PropTypes.string.isRequired,
   embedVersion: PropTypes.string.isRequired,
 }
 
-export default Tweeker
+export default TweekerEmbed
