@@ -24,5 +24,7 @@ module.exports = {
   externals: {
     'react': 'react',
     'react-dom' : 'reactDOM',
+    'tweeker-js': 'tweeker-js',
+    'prop-types': 'prop-types',
    }
 };
