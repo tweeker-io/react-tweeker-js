@@ -6,8 +6,6 @@ class TweekerEmbed extends Component {
   componentDidMount () {
     const { businessId, embedVersion } = this.props
 
-    console.log(embedTweeker)
-
     embedTweeker({ businessId, embedVersion })
   }
 
