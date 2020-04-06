@@ -29,10 +29,6 @@ const GLOBALS = {
 
 const OUTPUT_DATA = [
   {
-    file: pkg.browser,
-    format: 'umd',
-  },
-  {
     file: pkg.main,
     format: 'cjs',
   },
