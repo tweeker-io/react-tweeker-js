@@ -9,16 +9,14 @@ const OUTPUT_NAME = 'ReactTweekerJs';
 
 const PLUGINS = [
   peerDepsExternal(),
-  babel({
-    exclude: 'node_modules/**',
-  }),
-  resolve({
-    browser: true,
-  }),
+  resolve(),
   commonjs({
     namedExports: {
       'tweeker-js': ['embedTweeker']
     }
+  }),
+  babel({
+    exclude: 'node_modules/**',
   }),
 ]
 
