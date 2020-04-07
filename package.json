@@ -1,6 +1,6 @@
 {
   "name": "react-tweeker-js",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "A react wrapper for the tweeker embed script",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
