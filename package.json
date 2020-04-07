@@ -33,7 +33,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.2"
   },
   "dependencies": {
-    "tweeker-js": "^1.3.0"
+    "tweeker-js": "^1.4.1"
   },
   "peerDependencies": {
     "react": "^16.13.1",
