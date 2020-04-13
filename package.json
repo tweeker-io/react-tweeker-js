@@ -16,7 +16,14 @@
     "type": "git",
     "url": "https://github.com/tweeker-io/react-tweeker-js.git"
   },
-  "keywords": [],
+  "keywords": [
+    "tweeker",
+    "ab testing",
+    "multivariate",
+    "multivariate testing",
+    "javascript",
+    "react"
+  ],
   "author": "Tweeker (https://tweeker.io)",
   "license": "MIT",
   "devDependencies": {
