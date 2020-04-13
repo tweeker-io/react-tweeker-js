@@ -26,12 +26,14 @@ import ReactDOM from "react-dom"
 import TweekerEmbed from "react-tweeker-js"
 
 const App = () => (
-  <TweekerEmbed
-    businessId="YOUR_BUSINESS_ID"
-    embedVersion="YOUR_EMBED_VERSION"
-  />
+  <>
+    <TweekerEmbed
+      businessId="YOUR_BUSINESS_ID"
+      embedVersion="YOUR_EMBED_VERSION"
+    />
 
-  {...your other components}
+    {...your other components}
+  </>
 );
 
 ReactDOM.render(<App />, document.body)
