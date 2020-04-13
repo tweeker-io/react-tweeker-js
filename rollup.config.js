@@ -1,50 +1,24 @@
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import babel from 'rollup-plugin-babel'
 import resolve from '@rollup/plugin-node-resolve'
-import commonjs from '@rollup/plugin-commonjs'
 import pkg from './package.json'
 
-const INPUT_FILE_PATH = 'src/index.js';
-const OUTPUT_NAME = 'ReactTweekerJs';
-
-const PLUGINS = [
-  peerDepsExternal(),
-  resolve(),
-  commonjs({
-    namedExports: {
-      'tweeker-js': ['embedTweeker']
-    }
-  }),
-  babel({
-    exclude: 'node_modules/**',
-  }),
-]
-
-const GLOBALS = {
-  react: 'React',
-  'react-dom': 'ReactDOM',
-}
-
-const OUTPUT_DATA = [
-  {
-    file: pkg.main,
-    format: 'cjs',
-  },
-  {
-    file: pkg.module,
-    format: 'es',
-  },
-]
-
-const config = OUTPUT_DATA.map(({ file, format }) => ({
-  input: INPUT_FILE_PATH,
+export default {
+  input: 'src/index.js',
   output: {
-    file,
-    format,
-    name: OUTPUT_NAME,
-    globals: GLOBALS,
+    file: pkg.main,
+    format: 'es',
+    name: 'ReactTweekerJs',
+    globals: {
+      react: 'React',
+      'react-dom': 'ReactDOM',
+    },
   },
-  plugins: PLUGINS,
-}))
-
-export default config
+  plugins: [
+    peerDepsExternal(),
+    resolve(),
+    babel({
+      exclude: 'node_modules/**',
+    }),
+  ],
+}
